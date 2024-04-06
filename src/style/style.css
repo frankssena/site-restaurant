@@ -1,0 +1,16 @@
+:root {
+  --btn-header:#F8D477;
+  --banner:#FFE8B4;
+  --btn-main:#F8D477;
+  --background-body:#FFF9EA;
+  --color-geral:#FFFFFF;
+  --menu-active:#FFE100;
+  --header-span:#E9A209;
+  --color-font:#000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
