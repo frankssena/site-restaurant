@@ -29,7 +29,7 @@ header {
   width: 100%;
   position: fixed;
   padding: 40px 0;
- z-index: 99999;
+  z-index: 99999;
 }
 /*Header*/
 .header-container {
@@ -76,6 +76,7 @@ header {
     font-size: 0.8rem;
   }
   .header-btn a {
+    font-size: 0.6rem;
     padding: 8px 14px;
   }
 }
@@ -127,7 +128,6 @@ main {
   width: 100%;
   max-width: 1180px;
   margin: auto;
-  
 }
 .main-info {
   display: flex;
@@ -159,7 +159,7 @@ main {
   color: var(--color-font);
   font-size: 0.8rem;
   font-weight: 300;
-  padding: 10px 20px;
+  padding: 8px 14px;
   transition: 0.3s;
 }
 .main-btn a:hover {
@@ -172,7 +172,7 @@ main {
   color: var(--color-font);
   font-size: 0.8rem;
   font-weight: 300;
-  padding: 10px 20px;
+  padding: 8px 14px;
   transition: 0.3s;
 }
 .main-social {
@@ -187,4 +187,111 @@ main {
   background-size: cover;
   background-position: center;
 }
+
+/*Main Media Query*/
+@media(max-width:320px){
+  .main-container {
+    display: block;
+    
+  }
+  .main-img img{
+   display: none;
+  }
+  .main-info h1 {
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: center;
+    margin:0.4rem 0;
+  }
+  .main-info p {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0 1rem ;
+  }
+  .main-btn a {
+    font-size: 0.6rem;
+  }
+  .main-social {
+    justify-content: center;
+  }
+}
+@media(max-width:375px){
+  .main-container {
+    display: block;
+  }
+  .main-img img{
+   display: none;
+  }
+  .main-info h1 {
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: center;
+    margin:0.4rem 0;
+  }
+  .main-info p {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0 1rem ;
+  }
+  .main-btn a {
+    font-size: 0.6rem;
+  }
+  .main-social {
+    justify-content: center;
+  }
+  
+}
+@media(max-width:425px){
+  .main-container {
+    display: block;
+  }
+  .main-img img{
+   display: none;
+  }
+  .main-info h1 {
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: center;
+    margin:0.4rem 0;
+  }
+  .main-info p {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0 1rem ;
+  }
+  .main-btn a {
+    font-size: 0.6rem;
+    padding: 10px 16px;
+  }
+  .main-social {
+    justify-content: center;
+  }
+  
+}
+@media(max-width:768px){
+  .main-img img{
+    height: 274px;
+  }
+}
+
+
+
 
