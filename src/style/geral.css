@@ -29,6 +29,7 @@ header {
   width: 100%;
   position: fixed;
   padding: 40px 0;
+ z-index: 99999;
 }
 /*Header*/
 .header-container {
@@ -114,3 +115,76 @@ header {
     padding: 8px 14px;
   }
 }
+
+/*Main*/
+main {
+  padding-top: 10rem;
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+  
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  
+}
+.main-info h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.main-info strong {
+  color: var(--header-span);
+}
+.main-info p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0.4rem 0;
+}
+.main-btn {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 1rem ;
+}
+.main-btn a {
+  background-color: var(--btn-header);
+  border-radius: 10px;
+  color: var(--color-font);
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.main-btn a:hover {
+  transform: scale(1.1);
+}
+.main-btn button {
+  background-color: var(--btn-header);
+  border: none;
+  border-radius: 10px;
+  color: var(--color-font);
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.main-social {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  color: var(--header-span);
+}
+.main-img img{
+  height: 480px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
