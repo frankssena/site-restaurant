@@ -61,62 +61,7 @@ header {
 .header-btn a:hover {
   font-size: 1rem;
 }
-/*Header Media Query*/
-@media(max-width:320px){
-  .header-menu ul {
-    gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .header-menu a {
-    font-size: 0.8rem;
-  }
-  .header-btn a {
-    font-size: 0.6rem;
-    padding: 8px 14px;
-  }
-}
-@media(max-width:375px){
-  .header-menu ul {
-    gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .header-menu a {
-    font-size: 0.8rem;
-  }
-  .header-btn a {
-    padding: 8px 14px;
-  }
-}
-@media(max-width:425px){
-  .header-menu ul {
-    gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .header-menu a {
-    font-size: 0.8rem;
-  }
-  .header-btn a {
-    padding: 8px 14px;
-  }
-}
+
 
 /*Main*/
 main {
@@ -188,128 +133,24 @@ main {
   background-position: center;
 }
 
-/*Main Media Query*/
-@media(max-width:320px){
-  .main-container {
-    display: block;
-    
-  }
-  .main-img img{
-   display: none;
-  }
-  .main-info h1 {
-    font-size: 1.8rem;
-    line-height: 1;
-    text-align: center;
-    margin:0.4rem 0;
-  }
-  .main-info p {
-    text-align: center;
-    font-size: 0.6rem;
-  }
-  .main-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem 0 1rem ;
-  }
-  .main-btn a {
-    font-size: 0.6rem;
-  }
-  .main-social {
-    justify-content: center;
-  }
-}
-@media(max-width:375px){
-  .main-container {
-    display: block;
-  }
-  .main-img img{
-   display: none;
-  }
-  .main-info h1 {
-    font-size: 1.8rem;
-    line-height: 1;
-    text-align: center;
-    margin:0.4rem 0;
-  }
-  .main-info p {
-    text-align: center;
-    font-size: 0.6rem;
-  }
-  .main-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem 0 1rem ;
-  }
-  .main-btn a {
-    font-size: 0.6rem;
-  }
-  .main-social {
-    justify-content: center;
-  }
-  
-}
-@media(max-width:425px){
-  .main-container {
-    display: block;
-  }
-  .main-img img{
-   display: none;
-  }
-  .main-info h1 {
-    font-size: 1.8rem;
-    line-height: 1;
-    text-align: center;
-    margin:0.4rem 0;
-  }
-  .main-info p {
-    text-align: center;
-    font-size: 0.6rem;
-  }
-  .main-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem 0 1rem ;
-  }
-  .main-btn a {
-    font-size: 0.6rem;
-    padding: 10px 16px;
-  }
-  .main-social {
-    justify-content: center;
-  }
-  
-}
-@media(max-width:768px){
-  .main-img img{
-    height: 274px;
-  }
-}
-
 /*Section cardápio*/
-.section-container {
+.section-cardapio-container {
   padding: 10rem 0;
   width: 100%;
   max-width: 1180px;
   margin: auto;
 }
-.section-container h2 {
+.section-cardapio-container h2 {
   font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
 }
-.section-container h3 {
+.section-cardapio-container h3 {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
 }
-.section-container span {
+.section-cardapio-container span {
   color: var(--header-span);
 }
 .section-container-cardapio {
@@ -326,6 +167,23 @@ main {
   height: 390px;
   position: relative;
 }
+.section-enfeite {
+  background-color: var(--header-span);
+  border-radius:0% 10% 0% 70% ;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.section-enfeite i {
+  color: var(--color-geral);
+  display: block;
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
 .section-cardapio-card-info p {
   color: var(--color-font);
   font-size: 0.8rem;
@@ -369,22 +227,7 @@ main {
 .section-cardapio-preco i:hover {
   transform: scale(1.2);
 }
-.section-enfeite {
-  background-color: var(--header-span);
-  border-radius:0% 10% 0% 70% ;
-  width: 60px;
-  height: 60px;
-  right: 0;
-  top: 0;
-  position: absolute;
-}
-.section-enfeite i {
-  color: var(--color-geral);
-  display: block;
-  padding: 1.2rem 0;
-  text-align: center;
-  font-size: 1.4rem;
-}
+
 
 /*Depoimento*/
 .section-container-depoimentos {
