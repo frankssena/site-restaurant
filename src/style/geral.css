@@ -335,6 +335,23 @@ main {
    
   }
 }
+@media (max-width: 375px) {
+  .header-menu {
+    margin-bottom: 0.8rem;
+  }
+  .header-menu ul {
+    gap: 10px;
+    margin-top: 0.4rem;
+  }
+  .header-menu a {
+    font-size: 0.8rem;
+  }
+  .header-btn a {
+    font-size: 0.6rem;
+    font-weight: 400;
+    padding: 6px 20px;
+  }
+}
 /*Media query-main*/
 @media (max-width:320px) {
   .main-container {
@@ -342,6 +359,32 @@ main {
     justify-content: center;
     align-items: center;
   }
+  
+  .main-info h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+  }
+  .main-info p {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .main-btn {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .main-social {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .main-img {
+    display: none;
+  }
+}
+@media (max-width:375px) {
   
   .main-info h1 {
     font-size: 1.8rem;
@@ -388,6 +431,26 @@ main {
     height: 390px;
   }
 }
+@media (max-width:375px) {
+  .section-cardapio-container h2 {
+    font-size: 2rem;
+    margin-top: -6rem;
+  }
+  .section-cardapio-container h3 {
+    font-size: 1rem;
+  }
+  .section-container-cardapio {
+    display: block;
+    margin-left: 2.4rem;
+    margin-right: 1rem;
+    margin-top: 1.4rem;
+  }
+  .section-cardapio-card {
+    margin: 1rem 0;
+    width: 290px;
+    height: 390px;
+  }
+}
 /*Media depoimentos*/
 @media (max-width:320px) {
   .section-container-depoimentos {
@@ -416,6 +479,50 @@ main {
     height: 120px;
     width: 290px;
     margin-left: 1rem;
+  }
+  .section-depoimentos-icon-img {
+    display: flex;
+    gap: 0.1rem;
+    padding: 0.8rem 0;
+  }
+  .section-depoimentos-icon-img i {
+   font-size: 0.8rem;
+    margin-left: 4px;
+  }
+  .section-depoimentos-icon-img p {
+    font-size: 1rem;
+  }
+  .section-depoimentos-icon > p {
+    font-size: 0.6rem;
+    margin-top: -4px;
+  }
+}
+@media (max-width:375px) {
+  .section-container-depoimentos {
+    display: block;
+  }
+  .section-depoimentos-img img {
+    display: block;
+    margin: auto;
+    margin-top: -6rem;
+    width: 100%;
+    height: 100%;
+    width: 10rem;
+  }
+  .section-depoimentos-title h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .section-depoimentos-title h3 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -1rem;
+  }
+  .section-depoimentos-icon {
+    width: 100%;
+    height: 120px;
+    width: 300px;
+    margin-left: 2.4rem;
   }
   .section-depoimentos-icon-img {
     display: flex;
