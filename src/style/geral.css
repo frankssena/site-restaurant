@@ -232,9 +232,13 @@ main {
 }
 
 /*Depoimento*/
+
 .section-container-depoimentos {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
 }
 .section-depoimentos-img img {
   height: 100%;
@@ -331,6 +335,25 @@ main {
   }
   
 }
+@media screen and (min-width: 768px)  {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .header-menu ul {
+    gap: 40px;
+  }
+  .header-menu a {
+    font-size: 12px;
+  }
+  .header-btn a {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+  
+}
 
 /*Media query-main*/
 @media screen and (min-width:320px){
@@ -375,6 +398,15 @@ main {
   }
   .main-info {
     margin-left: 4rem;
+  }
+}
+@media screen and (min-width:768px){
+  .main-img img{
+    display: block;
+  }
+  .main-img img{
+    height: 380px;
+    width: 100%;
   }
 }
 /*Media query-cardapio*/
@@ -434,6 +466,16 @@ main {
   }
   .section-cardapio-card {
     margin-left: 4rem;
+  }
+}
+@media screen and (min-width:768px) {
+  .section-container-cardapio {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+  .section-cardapio-card {
+    margin: 0 0.4rem;
   }
 }
 /*Media query-depoimentos*/
@@ -515,4 +557,29 @@ main {
   .section-depoimentos-icon {
     margin-left: 3.4rem;
   }
+}
+@media screen and (min-width:768px) {
+  .section-container-depoimentos {
+    display: flex;
+  }
+  .section-depoimentos-img img {
+    height: 100%;
+    height: 280px;
+    margin-top: 1rem;
+    margin-left: -0.4rem;
+  }
+  .section-depoimentos-title h2 {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    margin-left: -2rem;
+    margin-top: 0;
+  }
+  .section-depoimentos-title h3 {
+    margin-left: -2rem;
+    margin-top: 0.2rem;
+  }
+  .section-depoimentos-icon {
+    margin-left: -2rem;
+  }
+  
 }
